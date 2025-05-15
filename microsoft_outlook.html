@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Microsoft Outlook Setup</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://unpkg.com/vue@3"></script>
+  <style>
+    body, html {
+      height: 100%;
+      margin: 0;
+    }
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background-color: #f5f5f5;
+      padding-left: 30px;
+    }
+    .content {
+      padding-top: 100px;
+    }
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+  </style>
+</head>
+<body>
+  <div id="app">
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="#" @click="goHome">Home Guideline</a>
+       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" title="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="container content">
+      <h1 class="mb-4">How to Setup Microsoft Outlook</h1>
+      <p>Quick steps:</p>  
+
+      <ol class="list-group list-group-numbered">
+        <li class="list-group-item mb-4">
+          <strong>Open Outlook and click File</strong>
+          <p>Open Outlook on your computer and click <strong>File</strong> in the top left corner.</p>
+          <img src="src/mi1.jpg" alt="file" class="img-fluid rounded shadow-sm">
+        </li>
+
+        <li class="list-group-item mb-4">
+          <strong>Click on Add Account</strong>
+          <p>Click <strong>Add Account</strong> to start setup.</p>
+          <img src="src/mi2.jpg" alt="add account" class="img-fluid rounded shadow-sm">
+        </li>
+
+        <li class="list-group-item mb-4">
+          <strong>Type in your email address</strong>
+          <p>Type in the email address you want to add and click <strong>Connect</strong>.</p>
+          <img src="src/mi3.jpg" alt="input email" class="img-fluid rounded shadow-sm">
+        </li>
+
+        <li class="list-group-item mb-4">
+          <strong>Enter your password</strong>
+          <p>Enter the password for your email account and click <strong>Connect</strong> to continue.</p>
+          <img src="src/mi4.jpg" alt="input password" class="img-fluid rounded shadow-sm">
+        </li>
+
+        <li class="list-group-item mb-4">
+          <strong>Close automatic setup</strong>
+          <p>Click <strong>Done</strong> to complete the setup process.</p>
+          <img src="src/mi5.jpg" alt="done" class="img-fluid rounded shadow-sm">
+        </li>
+
+        <li class="list-group-item mb-4">
+          <strong>Go to File again</strong>
+          <p>Your email account is now set up, but you need to adjust a setting.</p>
+          <p>Click <strong>File</strong> again in the top left corner.</p>
+          <img src="src/mi6.jpg" alt="file again" class="img-fluid rounded shadow-sm">
+        </li>
+
+        <li class="list-group-item mb-4">
+          <strong>Click on Account Settings</strong>
+          <ul class="mt-2">
+            <li>Select the email from the drop-down bar.</li>
+            <li>Click <strong>Account Settings</strong>.</li>
+            <li>Select <strong>Account Name and Sync Settings</strong>.</li>
+          </ul>
+          <img src="src/mi7.jpg" alt="account settings" class="img-fluid rounded shadow-sm mt-2">
+        </li>
+
+        <li class="list-group-item mb-4">
+          <strong>Set the Root folder path</strong>
+          <ul class="mt-2">
+            <li>Under <strong>Folder setting</strong>, type in <strong>INBOX</strong>.</li>
+            <li>Click <strong>Next</strong> to save your settings.</li>
+          </ul>
+          <img src="src/mi8.jpg" alt="folder path" class="img-fluid rounded shadow-sm mt-2">
+        </li>
+
+        <li class="list-group-item mb-4">
+          <strong>You are done!</strong>
+          <p>Click <strong>Done</strong> and go to your inbox. You should now see folders properly aligned.</p>
+          <img src="src/mi9.jpg" alt="done" class="img-fluid rounded shadow-sm">
+        </li>
+      </ol>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-4 mt-5">
+      <div class="container">
+        Need help? Contact our support team at
+        <a href="https://support.microsoft.com/en-us/office/quick-start-add-an-email-account-to-outlook-e9da47c4-9b89-4b49-b945-a204aeea6726" target="_blank" rel="noopener" class="text-info">Microsoft Support</a>
+        <p class="mb-0">&copy; 2025 Tan SEN. All rights reserved.</p>
+      </div>
+    </footer>
+  </div>
+
+  <!-- Bootstrap & Vue -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    const { createApp } = Vue
+    createApp({
+      methods: {
+        goHome() {
+          window.location.href = '/index.html';
+        }
+      }
+    }).mount('#app')
+  </script>
+</body>
+</html>

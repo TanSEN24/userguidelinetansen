@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Thunderbird Setup</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://unpkg.com/vue@3"></script>
+  <style>
+    body, html {
+      height: 100%;
+      margin: 0;
+    }
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background-color: #f5f5f5;
+    }
+    .content {
+      padding-top: 100px;
+    }
+  </style>
+</head>
+<body>
+  <div id="app">
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="#" @click="goHome">Home Guideline</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" title="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </div>
+    </nav>
+
+    <!-- Main content -->
+    <div class="container content">
+      <h1 class="mb-4 text-center">How to Setup Mozilla Thunderbird</h1>
+      <p class="lead">Quick steps:</p>
+
+      <ol class="list-group list-group-numbered">
+        <li class="list-group-item mb-4">
+          <strong>Download and install Thunderbird</strong>
+          <p>
+            Visit <a href="https://www.thunderbird.net" target="_blank" rel="noopener">https://www.thunderbird.net</a>, click <strong>Download</strong>, and follow the prompts.
+          </p>
+          <img src="src/222.jpg" alt="Download" class="img-fluid rounded shadow-sm">
+        </li>
+
+        <li class="list-group-item mb-4">
+          <strong>Open Thunderbird</strong>
+          <p>Open the installer and complete the setup. Then click the ☰ menu in the top right corner.</p>
+          <img src="src/111.jpg" alt="Open Thunderbird" class="img-fluid rounded shadow-sm">
+        </li>
+
+        <li class="list-group-item mb-4">
+          <strong>Set up your email account</strong>
+          <p>Click on <strong>New Account</strong>.</p>
+          <img src="src/333.jpg" alt="New Account" class="img-fluid rounded shadow-sm">
+        </li>
+
+        <li class="list-group-item mb-4">
+          <strong>Select Email</strong>
+          <p>Choose <strong>Email</strong>.</p>
+          <img src="src/444.jpg" alt="Select Email" class="img-fluid rounded shadow-sm">
+        </li>
+
+        <li class="list-group-item mb-4">
+          <strong>Enter your name, email address, and password</strong>
+          <p>Thunderbird may auto-detect server settings. If not, enter them manually.</p>
+          <img src="src/555.jpg" alt="Enter Details" class="img-fluid rounded shadow-sm">
+        </li>
+
+        <li class="list-group-item mb-4">
+          <strong>Enter the server names and ports</strong>
+          <p>Fill out the required server details provided by your email provider.</p>
+          <img src="src/666.jpg" alt="Server Info" class="img-fluid rounded shadow-sm">
+        </li>
+
+        <li class="list-group-item mb-4">
+          <strong>Click Done</strong>
+          <p>Finish setup by clicking <strong>Done</strong>.</p>
+          <img src="src/777.jpg" alt="Finish Setup" class="img-fluid rounded shadow-sm">
+        </li>
+      </ol>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center mt-5 py-3">
+      Need help? Contact our support team at
+      <a href="https://www.thunderbird.net/en-US/" target="_blank" class="text-info" rel="noopener">thunderbird.net</a>
+      <p class="mb-0">&copy; 2025 Tan SEN. All rights reserved.</p>
+    </footer>
+  </div>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    const { createApp } = Vue
+    createApp({
+      methods: {
+        goHome() {
+          window.location.href = 'index.html';
+        }
+      }
+    }).mount('#app')
+  </script>
+</body>
+</html>

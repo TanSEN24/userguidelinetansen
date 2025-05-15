@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Email Send As Setup</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://unpkg.com/vue@3"></script>
+  <style>
+    body, html {
+      height: 100%;
+      margin: 0;
+    }
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background-color: #f5f5f5;
+    }
+    .content {
+      padding-top: 100px;
+    }
+    img {
+      max-width: 100%;
+      height: auto;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      padding: 5px;
+    }
+  </style>
+</head>
+<body>
+  <div id="app">
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="#" @click="goHome">Home Guideline</a>
+      </div>
+    </nav>
+
+    <!-- Content -->
+    <div class="container content">
+      <h1 class="mb-4">How to Setup Email Send As</h1>
+      <p>In this guide, we will show you how to set up your email account to send emails as another address. This is useful if you want to manage multiple email addresses from a single account.</p>
+
+      <p><strong>Quick steps:</strong></p>
+      <ol>
+        <li class="mb-4">
+          <strong>Go to Google Chrome and search "Create new Gmail account".</strong>
+          <p>Click on <strong>Create a Gmail account</strong>.</p>
+          <img src="/src/e1.jpg" alt="Step 1">
+        </li>
+
+        <li class="mb-4">
+          <strong>If you don't have an account:</strong>
+          <p>Click on <strong>Create account</strong>.</p>
+          <img src="/src/e2.jpg" alt="Step 2">
+        </li>
+
+        <li class="mb-4">
+          <strong>Create Google Account</strong>
+          <p>Enter your first and last name, then click <strong>Next</strong>.</p>
+          <img src="/src/e3.jpg" alt="Step 3">
+        </li>
+
+        <li class="mb-4">
+          <strong>Enter Your Date of Birth and Gender</strong>
+          <p>Fill in your date of birth and gender, then click <strong>Next</strong>.</p>
+          <img src="/src/e4.jpg" alt="Step 4">
+        </li>
+
+        <li class="mb-4">
+          <strong>Choose Your Gmail Address</strong>
+          <p>Select or create a Gmail address, then click <strong>Next</strong>.</p>
+          <img src="/src/e5.jpg" alt="Step 5">
+        </li>
+
+        <li class="mb-4">
+          <strong>Choose a Password</strong>
+          <p>Create a strong password and then click <strong>Next</strong>.</p>
+          <img src="/src/e6.jpg" alt="Step 6">
+        </li>
+
+        <li class="mb-4">
+          <strong>Enter Your Phone Number</strong>
+          <p>Input your phone number, verify you're not a robot, and then click <strong>Next</strong>.</p>
+          <img src="/src/e7.jpg" alt="Step 7">
+        </li>
+
+        <li class="mb-4">
+          <strong>Enter the Verification Code</strong>
+          <p>Enter the code sent to your phone number and click <strong>Next</strong>.</p>
+          <img src="/src/e8.jpg" alt="Step 8">
+        </li>
+
+        <li class="mb-4">
+          <strong>Add Recovery Email (Optional)</strong>
+          <p>You can add a recovery email or skip this step.</p>
+          <img src="/src/e9.jpg" alt="Step 9">
+        </li>
+
+        <li class="mb-4">
+          <strong>Review Account Information</strong>
+          <p>You will see a summary of your info. Click <strong>Next</strong>.</p>
+          <img src="/src/e10.jpg" alt="Step 10">
+        </li>
+
+        <li class="mb-4">
+          <strong>All Done</strong>
+          <p>Click on <strong>I agree</strong>. Your email setup is complete. You can now use your email for school, work, or personal use.</p>
+          <img src="/src/e11.jpg" alt="Step 11">
+        </li>
+      </ol>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center text-lg-start mt-5">
+      <div class="text-center p-3">
+        Need help? Contact our support team at
+        <a href="https://www.thunderbird.net/en-US/" class="text-white" target="_blank" rel="noopener">Thunderbird Support</a>
+        <p>&copy; 2025 Tan SEN. All rights reserved.</p>
+      </div>
+    </footer>
+  </div>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    const { createApp } = Vue
+    createApp({
+      methods: {
+        goHome() {
+          window.location.href = '/index.html';
+        }
+      }
+    }).mount('#app')
+  </script>
+</body>
+</html>
